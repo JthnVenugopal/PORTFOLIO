@@ -17,7 +17,6 @@ body {
 a {
   color: rgb(251, 207, 11);
   text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
@@ -53,14 +52,6 @@ a:hover {
   width: 100%;
   height: 2px;
   background: #f39c12;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 /* Hero Section styles */
@@ -82,7 +73,6 @@ a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  transition: opacity 0.3s ease;
 }
 
 .hero h2 {
@@ -110,11 +100,6 @@ a:hover {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
-  transition: transform 0.3s ease;
-}
-
-#about img:hover {
-  transform: scale(1.05);
 }
 
 #more-text {
@@ -123,12 +108,6 @@ a:hover {
 
 #about:hover #more-text {
   display: block;
-  animation: fadeIn 1s ease-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 /* Portfolio Section styles */
@@ -150,19 +129,9 @@ a:hover {
   min-height: 400px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .card-img-top {
-  transition: transform 0.3s ease;
-}
-
-.card:hover .card-img-top {
-  transform: scale(1.1);
 }
 
 .card-img-overlay {
@@ -174,7 +143,6 @@ a:hover {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   opacity: 0;
-  transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,16 +164,10 @@ a:hover {
 }
 
 .skill-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 20px;
   margin: 15px 0;
-}
-
-.skill-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skill-card h4 {
@@ -230,13 +192,11 @@ a:hover {
 .btn-warning {
   background-color: rgb(251, 207, 11);
   border-color: rgb(251, 207, 11);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-warning:hover {
   background-color: #f39c12;
   border-color: #f39c12;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer styles */
@@ -248,7 +208,6 @@ footer {
 
 /* Profile picture hover effect */
 .dp {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
   max-width: 100%;
   height: auto;
@@ -262,7 +221,6 @@ footer {
 /* Fade-in effect for scrolling content */
 .fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in;
 }
 
 .fade-in.show {
